@@ -15,7 +15,6 @@
 		34644AF28C7A0CC8EF06FBF4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34644285A0E09742469F17F7 /* Info.plist */; };
 		34644BB2A27ED4BF49C3E409 /* DVTShowcaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34644E3DA4A9D62DDC296632 /* DVTShowcaseTests.swift */; };
 		34644C9DC32D875C16C31450 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34644F94FD5A595E4D55BC50 /* Info.plist */; };
-		34644DC5A7B2DDF6EC8E9EED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34644BF9A4677327956F5B81 /* ViewController.swift */; };
 		34644E7CB40618446ECCC134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34644B979FD65E7DBC79A7E8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +45,6 @@
 		346448D8C230FF0F249D08DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34644B979FD65E7DBC79A7E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34644BCDD3A871F97071A11C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		34644BF9A4677327956F5B81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34644CFA9AC6F8453224C05E /* DVTShowcaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVTShowcaseUITests.swift; sourceTree = "<group>"; };
 		34644E3DA4A9D62DDC296632 /* DVTShowcaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVTShowcaseTests.swift; sourceTree = "<group>"; };
 		34644F94FD5A595E4D55BC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				3464401EC39CE2524291565E /* LaunchScreen.storyboard */,
 				346448D8C230FF0F249D08DC /* AppDelegate.swift */,
 				3464429DE5A3C791835A476C /* Main.storyboard */,
-				34644BF9A4677327956F5B81 /* ViewController.swift */,
 			);
 			path = DVTShowcase;
 			sourceTree = "<group>";
@@ -263,7 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				34644A8D9CFF624DF7DA8791 /* AppDelegate.swift in Sources */,
-				34644DC5A7B2DDF6EC8E9EED /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +475,7 @@
 				34644E249F17AFD5543E167F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34644067D5B3070E7A1520D6 /* Build configuration list for PBXProject "DVTShowcase" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +493,7 @@
 				34644B0B7CF4439D42FCAEF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34644FB213B51585018F90AE /* Build configuration list for PBXNativeTarget "DVTShowcase" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +502,7 @@
 				34644DEB17D0BAF83AAAF056 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
