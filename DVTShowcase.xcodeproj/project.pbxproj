@@ -97,6 +97,11 @@
 		3464498E7DD1F31C770E8791 /* DVTShowcase */ = {
 			isa = PBXGroup;
 			children = (
+				ED3EC1491F6BDEEF00FD40A5 /* Model */,
+				ED3EC14A1F6BDEF900FD40A5 /* View */,
+				ED3EC14B1F6BDF0600FD40A5 /* ViewModel */,
+				ED9531231F6C5674002C94DA /* Service */,
+				ED9531241F6C5691002C94DA /* Extensions */,
 				346443D1E9FBD8FCC1EFBF36 /* Info.plist */,
 				34644B979FD65E7DBC79A7E8 /* Assets.xcassets */,
 				3464401EC39CE2524291565E /* LaunchScreen.storyboard */,
@@ -123,6 +128,41 @@
 				346441CF723D96E81470BCCD /* DVTShowcaseTests */,
 				346449EDC21B0A5D7BAE2D52 /* DVTShowcaseUITests */,
 			);
+			sourceTree = "<group>";
+		};
+		ED3EC1491F6BDEEF00FD40A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ED3EC14A1F6BDEF900FD40A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		ED3EC14B1F6BDF0600FD40A5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED9531231F6C5674002C94DA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		ED9531241F6C5691002C94DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
