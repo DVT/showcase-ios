@@ -15,8 +15,10 @@
 		34644AF28C7A0CC8EF06FBF4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34644285A0E09742469F17F7 /* Info.plist */; };
 		34644BB2A27ED4BF49C3E409 /* DVTShowcaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34644E3DA4A9D62DDC296632 /* DVTShowcaseTests.swift */; };
 		34644C9DC32D875C16C31450 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34644F94FD5A595E4D55BC50 /* Info.plist */; };
-		34644DC5A7B2DDF6EC8E9EED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34644BF9A4677327956F5B81 /* ViewController.swift */; };
 		34644E7CB40618446ECCC134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34644B979FD65E7DBC79A7E8 /* Assets.xcassets */; };
+		D67FFF9D1F6FD2710063449C /* DVTShowcaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67FFF9C1F6FD2710063449C /* DVTShowcaseViewController.swift */; };
+		D67FFFA01F6FD2B00063449C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67FFF9F1F6FD2B00063449C /* LoginViewController.swift */; };
+		D6A629F31F6FF7590070994C /* DVTShowcaseColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A629F21F6FF7580070994C /* DVTShowcaseColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +48,12 @@
 		346448D8C230FF0F249D08DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34644B979FD65E7DBC79A7E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34644BCDD3A871F97071A11C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		34644BF9A4677327956F5B81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34644CFA9AC6F8453224C05E /* DVTShowcaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVTShowcaseUITests.swift; sourceTree = "<group>"; };
 		34644E3DA4A9D62DDC296632 /* DVTShowcaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVTShowcaseTests.swift; sourceTree = "<group>"; };
 		34644F94FD5A595E4D55BC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		D67FFF9C1F6FD2710063449C /* DVTShowcaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVTShowcaseViewController.swift; sourceTree = "<group>"; };
+		D67FFF9F1F6FD2B00063449C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D6A629F21F6FF7580070994C /* DVTShowcaseColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVTShowcaseColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,13 @@
 		3464498E7DD1F31C770E8791 /* DVTShowcase */ = {
 			isa = PBXGroup;
 			children = (
+				D67FFF9B1F6FD24D0063449C /* Parent Classes */,
+				D67FFF9A1F6FD20A0063449C /* Login View Controllers */,
 				346443D1E9FBD8FCC1EFBF36 /* Info.plist */,
 				34644B979FD65E7DBC79A7E8 /* Assets.xcassets */,
 				3464401EC39CE2524291565E /* LaunchScreen.storyboard */,
 				346448D8C230FF0F249D08DC /* AppDelegate.swift */,
 				3464429DE5A3C791835A476C /* Main.storyboard */,
-				34644BF9A4677327956F5B81 /* ViewController.swift */,
 			);
 			path = DVTShowcase;
 			sourceTree = "<group>";
@@ -121,11 +126,28 @@
 		34644D8AA62E587FCE36A092 = {
 			isa = PBXGroup;
 			children = (
-				346446A70B45E2B7FE7C0921 /* Products */,
+				D6A629F21F6FF7580070994C /* DVTShowcaseColor.swift */,
 				3464498E7DD1F31C770E8791 /* DVTShowcase */,
+				346446A70B45E2B7FE7C0921 /* Products */,
 				346441CF723D96E81470BCCD /* DVTShowcaseTests */,
 				346449EDC21B0A5D7BAE2D52 /* DVTShowcaseUITests */,
 			);
+			sourceTree = "<group>";
+		};
+		D67FFF9A1F6FD20A0063449C /* Login View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D67FFF9F1F6FD2B00063449C /* LoginViewController.swift */,
+			);
+			name = "Login View Controllers";
+			sourceTree = "<group>";
+		};
+		D67FFF9B1F6FD24D0063449C /* Parent Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D67FFF9C1F6FD2710063449C /* DVTShowcaseViewController.swift */,
+			);
+			name = "Parent Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +213,11 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = DVT;
+				TargetAttributes = {
+					34644CE70F41E68F10323185 = {
+						DevelopmentTeam = 69CVBN965U;
+					};
+				};
 			};
 			buildConfigurationList = 34644067D5B3070E7A1520D6 /* Build configuration list for PBXProject "DVTShowcase" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -262,8 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D67FFFA01F6FD2B00063449C /* LoginViewController.swift in Sources */,
+				D67FFF9D1F6FD2710063449C /* DVTShowcaseViewController.swift in Sources */,
 				34644A8D9CFF624DF7DA8791 /* AppDelegate.swift in Sources */,
-				34644DC5A7B2DDF6EC8E9EED /* ViewController.swift in Sources */,
+				D6A629F31F6FF7590070994C /* DVTShowcaseColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 69CVBN965U;
 				INFOPLIST_FILE = DVTShowcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = za.co.dvt.DVTShowcase;
@@ -399,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 69CVBN965U;
 				INFOPLIST_FILE = DVTShowcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = za.co.dvt.DVTShowcase;
@@ -479,6 +510,7 @@
 				34644E249F17AFD5543E167F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34644067D5B3070E7A1520D6 /* Build configuration list for PBXProject "DVTShowcase" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +528,7 @@
 				34644B0B7CF4439D42FCAEF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34644FB213B51585018F90AE /* Build configuration list for PBXNativeTarget "DVTShowcase" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +537,7 @@
 				34644DEB17D0BAF83AAAF056 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
