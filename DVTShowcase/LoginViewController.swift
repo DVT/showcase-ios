@@ -9,8 +9,8 @@
 import UIKit
 
 class LoginViewController: DVTShowcaseViewController, UITextFieldDelegate {
-    @IBOutlet var usernameTF: UITextField!
-    @IBOutlet var passwordTF: UITextField!
+    @IBOutlet weak var usernameTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
     fileprivate var loginBarButtonItem:UIBarButtonItem!
     fileprivate var missingLoginBarButtonItem:UIBarButtonItem!
     @IBOutlet var loginContainerView: UIView!
@@ -24,7 +24,7 @@ class LoginViewController: DVTShowcaseViewController, UITextFieldDelegate {
         loginBtn.setTitleColor(UIColor.white, for: .normal)
         loginBtn.backgroundColor = DVTShowcaseColor.greenColor
         loginBtn.layer.cornerRadius = 8.0
-        loginBtn.addTarget(self, action: #selector(authenticeUser(sender:)), for: .touchUpInside)
+        loginBtn.addTarget(self, action: #selector(authenticateUser(sender:)), for: .touchUpInside)
         
         loginBarButtonItem = UIBarButtonItem(customView: loginBtn)
         missingLoginBarButtonItem = UIBarButtonItem(title: "Missing login details?", style: UIBarButtonItemStyle.plain, target: self, action: nil)
@@ -44,10 +44,9 @@ class LoginViewController: DVTShowcaseViewController, UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.startup()
-        usernameTF.becomeFirstResponder()
     }
     
-    func authenticeUser(sender: UIBarButtonItem) {
+    func authenticateUser(sender: UIBarButtonItem) {
         
     }
     
@@ -58,7 +57,8 @@ class LoginViewController: DVTShowcaseViewController, UITextFieldDelegate {
             loginViewRect.origin.y -= ((self.loginContainerView.frame.origin.x + self.loginContainerView.frame.size.height) / 2) - 100 - 50;
             self.loginContainerView.frame = loginViewRect
         }) { (true) in
-            UIView.animate(withDuration: 1.0, animations: { 
+            UIView.animate(withDuration: 0.5, animations: {
+                self.usernameTF.becomeFirstResponder()
                 var loginViewRect : CGRect
                 loginViewRect = self.loginContainerView.frame;
                 loginViewRect.origin.y += 0;

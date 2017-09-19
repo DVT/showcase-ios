@@ -111,8 +111,8 @@
                     </view>
                     <connections>
                         <outlet property="loginContainerView" destination="ioI-9t-tz3" id="Mk7-Mk-i2s"/>
-                        <outlet property="passwordTF" destination="KHS-lj-e3B" id="dpC-NT-jXS"/>
-                        <outlet property="usernameTF" destination="0Ja-mR-9nW" id="pQp-ie-7Sr"/>
+                        <outlet property="passwordTF" destination="KHS-lj-e3B" id="2Li-pv-qcH"/>
+                        <outlet property="usernameTF" destination="0Ja-mR-9nW" id="8VO-cC-3ZB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
