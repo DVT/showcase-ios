@@ -36,13 +36,13 @@
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ja-mR-9nW">
-                                                <rect key="frame" x="28" y="290" width="319" height="27"/>
+                                                <rect key="frame" x="28" y="290" width="319" height="26"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="19"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFH-nn-PUv">
-                                                <rect key="frame" x="28" y="320" width="319" height="1"/>
+                                                <rect key="frame" x="28" y="319" width="319" height="1"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="3pR-Kp-Kpw"/>
@@ -52,13 +52,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KHS-lj-e3B">
-                                                <rect key="frame" x="28" y="342" width="319" height="27"/>
+                                                <rect key="frame" x="28" y="341" width="319" height="26"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="19"/>
                                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nk4-te-9DF">
-                                                <rect key="frame" x="28" y="372" width="319" height="1"/>
+                                                <rect key="frame" x="28" y="370" width="319" height="1"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="fS3-So-2fc"/>
@@ -119,8 +119,139 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
+        <!--Showcase Tab Controller-->
+        <scene sceneID="Zbf-pW-2YS">
+            <objects>
+                <tabBarController storyboardIdentifier="dvtShowcaseTabController" id="RLA-r9-cud" customClass="DVTShowcaseTabController" customModule="DVTShowcase" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8ad-Bh-yXp"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="UE5-we-4Zf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="HIJ-bC-NDO" kind="relationship" relationship="viewControllers" id="5op-M3-1ee"/>
+                        <segue destination="5uV-Pm-I6d" kind="relationship" relationship="viewControllers" id="CGH-iS-edm"/>
+                        <segue destination="lex-Wr-ESE" kind="relationship" relationship="viewControllers" id="cli-bi-gZ3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hC-dL-zp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="36"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="69J-fL-8gf">
+            <objects>
+                <navigationController id="HIJ-bC-NDO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="tK6-oh-E8I"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QIb-9U-IcU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jg1-b6-m1v" kind="relationship" relationship="rootViewController" id="mGP-9h-ZdB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="muw-a6-0s2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="190" y="847"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="X5i-9v-Vp7">
+            <objects>
+                <viewController id="jg1-b6-m1v" customClass="HomeViewController" customModule="DVTShowcase" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HbT-Eg-JBS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ify-TA-xEt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ztR-iH-L4l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xz5-e1-pD3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OYA-N0-QNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="190" y="1639"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="5dL-BQ-2fd">
+            <objects>
+                <viewController id="LT0-iE-1hg" customClass="AboutViewController" customModule="DVTShowcase" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hAR-Lb-72e"/>
+                        <viewControllerLayoutGuide type="bottom" id="XuA-ja-yDV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="diD-rd-tVM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pBP-Ib-m5D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qDv-cN-jCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="1632"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="OTQ-ZO-FmQ">
+            <objects>
+                <viewController id="Ta3-2J-UhM" customClass="ContactViewController" customModule="DVTShowcase" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aR7-eu-ep8"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Y3-vI-AZP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jp9-ZA-3bs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OnW-Fd-7xU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybY-Kv-qPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1706" y="1633"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="ghY-6Y-MHa">
+            <objects>
+                <navigationController id="5uV-Pm-I6d" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="info" id="VCd-n6-GVS"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vyr-az-nLU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LT0-iE-1hg" kind="relationship" relationship="rootViewController" id="Fb3-Mb-rb2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SI4-C1-gKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="847"/>
+        </scene>
+        <!--Contact-->
+        <scene sceneID="ZJ9-PN-6wO">
+            <objects>
+                <navigationController id="lex-Wr-ESE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contact" image="phone" id="GVs-0m-GmL"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZXL-7P-Vcb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ta3-2J-UhM" kind="relationship" relationship="rootViewController" id="VWs-Lb-PTw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v8r-za-V96" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689" y="847"/>
+        </scene>
     </scenes>
     <resources>
         <image name="dvt_logo" width="802" height="789"/>
+        <image name="home" width="24" height="24"/>
+        <image name="info" width="24" height="24"/>
+        <image name="phone" width="24" height="24"/>
     </resources>
 </document>
