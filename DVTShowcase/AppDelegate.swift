@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FirebaseCore
+import FirebaseDatabase
 
 
 @UIApplicationMain
@@ -23,6 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
         Thread.sleep(forTimeInterval: 1)
         FirebaseApp.configure()
+        Database.database().isPersistenceEnabled = true
+        
+        let didLoginBefore =  UserDefaults.standard.bool(forKey: "DidLoggedIn")
+        if  didLoginBefore {
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let dvtShowcaseTabController = mainStoryboard.instantiateViewController(withIdentifier: "dvtShowcaseTabController")
+            self.window?.rootViewController = dvtShowcaseTabController
+        }
         return true
     }
 

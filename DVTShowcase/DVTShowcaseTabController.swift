@@ -18,7 +18,7 @@ class DVTShowcaseTabController: UITabBarController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        self.tabBar.tintColor = DVTShowcaseColor.tabBarSelectedItemTintColor
+        self.tabBar.tintColor = DVTShowcaseColor.blueColor
     }
 
     

@@ -23,6 +23,12 @@
 		D61E929C1F71441400B60518 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E929B1F71441400B60518 /* HomeViewController.swift */; };
 		D61E929E1F71442300B60518 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E929D1F71442300B60518 /* AboutViewController.swift */; };
 		D61E92A01F71443100B60518 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E929F1F71443100B60518 /* ContactViewController.swift */; };
+		D64395701F755D410085F3F3 /* CMMapLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = D643956F1F755D410085F3F3 /* CMMapLauncher.m */; };
+		D64C4E871F728DE500C90F51 /* DVTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C4E861F728DE500C90F51 /* DVTApp.swift */; };
+		D64C4E8B1F72A42000C90F51 /* ShowcaseAppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C4E891F72A42000C90F51 /* ShowcaseAppTableViewCell.swift */; };
+		D64C4E8C1F72A42000C90F51 /* ShowcaseAppTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D64C4E8A1F72A42000C90F51 /* ShowcaseAppTableViewCell.xib */; };
+		D64C4E8F1F753CBA00C90F51 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C4E8D1F753CBA00C90F51 /* ContactTableViewCell.swift */; };
+		D64C4E901F753CBA00C90F51 /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D64C4E8E1F753CBA00C90F51 /* ContactTableViewCell.xib */; };
 		D67FFF9D1F6FD2710063449C /* DVTShowcaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67FFF9C1F6FD2710063449C /* DVTShowcaseViewController.swift */; };
 		D67FFFA01F6FD2B00063449C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67FFF9F1F6FD2B00063449C /* LoginViewController.swift */; };
 		D6A629F31F6FF7590070994C /* DVTShowcaseColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A629F21F6FF7580070994C /* DVTShowcaseColor.swift */; };
@@ -67,6 +73,14 @@
 		D61E929B1F71441400B60518 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D61E929D1F71442300B60518 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		D61E929F1F71443100B60518 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		D643956D1F755D400085F3F3 /* DVTShowcase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DVTShowcase-Bridging-Header.h"; sourceTree = "<group>"; };
+		D643956E1F755D410085F3F3 /* CMMapLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMMapLauncher.h; sourceTree = "<group>"; };
+		D643956F1F755D410085F3F3 /* CMMapLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMMapLauncher.m; sourceTree = "<group>"; };
+		D64C4E861F728DE500C90F51 /* DVTApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVTApp.swift; sourceTree = "<group>"; };
+		D64C4E891F72A42000C90F51 /* ShowcaseAppTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowcaseAppTableViewCell.swift; sourceTree = "<group>"; };
+		D64C4E8A1F72A42000C90F51 /* ShowcaseAppTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowcaseAppTableViewCell.xib; sourceTree = "<group>"; };
+		D64C4E8D1F753CBA00C90F51 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		D64C4E8E1F753CBA00C90F51 /* ContactTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
 		D67FFF9C1F6FD2710063449C /* DVTShowcaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVTShowcaseViewController.swift; sourceTree = "<group>"; };
 		D67FFF9F1F6FD2B00063449C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D6A629F21F6FF7580070994C /* DVTShowcaseColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVTShowcaseColor.swift; sourceTree = SOURCE_ROOT; };
@@ -128,6 +142,7 @@
 		3464498E7DD1F31C770E8791 /* DVTShowcase */ = {
 			isa = PBXGroup;
 			children = (
+				D64C4E851F728DA200C90F51 /* Model */,
 				D61E92A11F71676600B60518 /* Reusable components */,
 				D6A629F21F6FF7580070994C /* DVTShowcaseColor.swift */,
 				D61E92911F7129B100B60518 /* Services */,
@@ -224,13 +239,45 @@
 		D61E92A11F71676600B60518 /* Reusable components */ = {
 			isa = PBXGroup;
 			children = (
+				D64395711F755D440085F3F3 /* CMMapLauncher */,
+				D643956D1F755D400085F3F3 /* DVTShowcase-Bridging-Header.h */,
 			);
 			name = "Reusable components";
+			sourceTree = "<group>";
+		};
+		D64395711F755D440085F3F3 /* CMMapLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				D643956E1F755D410085F3F3 /* CMMapLauncher.h */,
+				D643956F1F755D410085F3F3 /* CMMapLauncher.m */,
+			);
+			name = CMMapLauncher;
+			sourceTree = "<group>";
+		};
+		D64C4E851F728DA200C90F51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D64C4E861F728DE500C90F51 /* DVTApp.swift */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D64C4E881F72A40100C90F51 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				D64C4E891F72A42000C90F51 /* ShowcaseAppTableViewCell.swift */,
+				D64C4E8A1F72A42000C90F51 /* ShowcaseAppTableViewCell.xib */,
+				D64C4E8D1F753CBA00C90F51 /* ContactTableViewCell.swift */,
+				D64C4E8E1F753CBA00C90F51 /* ContactTableViewCell.xib */,
+			);
+			name = "Custom Views";
 			sourceTree = "<group>";
 		};
 		D67FFF9A1F6FD20A0063449C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D64C4E881F72A40100C90F51 /* Custom Views */,
 				D61E929A1F7143D600B60518 /* Contact View Controllers */,
 				D61E92991F7143CB00B60518 /* About View Controllers */,
 				D61E92981F7143BC00B60518 /* Home View Controllers */,
@@ -317,6 +364,7 @@
 				TargetAttributes = {
 					34644CE70F41E68F10323185 = {
 						DevelopmentTeam = 69CVBN965U;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -354,8 +402,10 @@
 			files = (
 				3464468934A8B041FABD76D0 /* Info.plist in Resources */,
 				34644E7CB40618446ECCC134 /* Assets.xcassets in Resources */,
+				D64C4E901F753CBA00C90F51 /* ContactTableViewCell.xib in Resources */,
 				3464475677FFE33378AD3B08 /* LaunchScreen.storyboard in Resources */,
 				3464448E8F8AC41D78838095 /* Main.storyboard in Resources */,
+				D64C4E8C1F72A42000C90F51 /* ShowcaseAppTableViewCell.xib in Resources */,
 				D61E92901F71282500B60518 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,11 +489,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64C4E8F1F753CBA00C90F51 /* ContactTableViewCell.swift in Sources */,
 				D61E92941F7129D200B60518 /* FirebaseAPI.swift in Sources */,
 				D67FFFA01F6FD2B00063449C /* LoginViewController.swift in Sources */,
 				D67FFF9D1F6FD2710063449C /* DVTShowcaseViewController.swift in Sources */,
+				D64395701F755D410085F3F3 /* CMMapLauncher.m in Sources */,
 				34644A8D9CFF624DF7DA8791 /* AppDelegate.swift in Sources */,
+				D64C4E871F728DE500C90F51 /* DVTApp.swift in Sources */,
 				D6A629F31F6FF7590070994C /* DVTShowcaseColor.swift in Sources */,
+				D64C4E8B1F72A42000C90F51 /* ShowcaseAppTableViewCell.swift in Sources */,
 				D61E92A01F71443100B60518 /* ContactViewController.swift in Sources */,
 				D61E929C1F71441400B60518 /* HomeViewController.swift in Sources */,
 				D61E929E1F71442300B60518 /* AboutViewController.swift in Sources */,
@@ -534,11 +588,14 @@
 			baseConfigurationReference = 5911324683A68C741EEEF336 /* Pods-DVTShowcase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 69CVBN965U;
 				INFOPLIST_FILE = DVTShowcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = za.co.dvt.DVTShowcase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DVTShowcase/DVTShowcase-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -586,11 +643,13 @@
 			baseConfigurationReference = 2E2E4355EF3CACFCEFCC453D /* Pods-DVTShowcase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 69CVBN965U;
 				INFOPLIST_FILE = DVTShowcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = za.co.dvt.DVTShowcase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DVTShowcase/DVTShowcase-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

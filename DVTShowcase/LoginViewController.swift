@@ -63,6 +63,8 @@ class LoginViewController: DVTShowcaseViewController, UITextFieldDelegate {
                     let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     let dvtShowcaseTabController = mainStoryboard.instantiateViewController(withIdentifier: "dvtShowcaseTabController")
                     self.show(dvtShowcaseTabController, sender: nil)
+                    UserDefaults.standard.set(true, forKey: "DidLoggedIn")
+                    UserDefaults.standard.synchronize()
                 } else {
                     DispatchQueue.main.async(execute: { () -> Void in
                         self.hideLoading()

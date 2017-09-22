@@ -167,9 +167,38 @@
                     <view key="view" contentMode="scaleToFill" id="ztR-iH-L4l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GvD-rV-NDl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.86423788270000002" green="0.86466305269999999" blue="0.86274978739999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GvD-rV-NDl" firstAttribute="height" secondItem="ztR-iH-L4l" secondAttribute="height" id="0f1-Ks-a6C"/>
+                            <constraint firstItem="GvD-rV-NDl" firstAttribute="centerY" secondItem="ztR-iH-L4l" secondAttribute="centerY" id="5RZ-MK-9oh"/>
+                            <constraint firstItem="GvD-rV-NDl" firstAttribute="centerX" secondItem="ztR-iH-L4l" secondAttribute="centerX" id="6lk-Fl-FVa"/>
+                            <constraint firstItem="GvD-rV-NDl" firstAttribute="height" secondItem="ztR-iH-L4l" secondAttribute="height" placeholder="YES" id="Dad-Bc-0Bn"/>
+                            <constraint firstItem="GvD-rV-NDl" firstAttribute="width" secondItem="ztR-iH-L4l" secondAttribute="width" id="Kke-jm-NSt"/>
+                            <constraint firstItem="GvD-rV-NDl" firstAttribute="leading" secondItem="ztR-iH-L4l" secondAttribute="leadingMargin" placeholder="YES" id="OaE-HL-41h"/>
+                            <constraint firstItem="GvD-rV-NDl" firstAttribute="top" secondItem="HbT-Eg-JBS" secondAttribute="bottom" placeholder="YES" id="TK4-ai-tns"/>
+                            <constraint firstItem="Ify-TA-xEt" firstAttribute="top" secondItem="GvD-rV-NDl" secondAttribute="bottom" placeholder="YES" id="e59-XC-V8g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GvD-rV-NDl" secondAttribute="trailing" placeholder="YES" id="zFX-N5-baJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Dad-Bc-0Bn"/>
+                                <exclude reference="OaE-HL-41h"/>
+                                <exclude reference="TK4-ai-tns"/>
+                                <exclude reference="zFX-N5-baJ"/>
+                                <exclude reference="e59-XC-V8g"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Xz5-e1-pD3"/>
+                    <connections>
+                        <outlet property="showcaseAppTableView" destination="GvD-rV-NDl" id="GjF-DY-Ng4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OYA-N0-QNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -205,9 +234,36 @@
                     <view key="view" contentMode="scaleToFill" id="Jp9-ZA-3bs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XLL-6O-VKG">
+                                <rect key="frame" x="5" y="0.0" width="365" height="667"/>
+                                <color key="backgroundColor" red="0.96122980446870743" green="0.96261160712176863" blue="0.96064519556326522" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XLL-6O-VKG" firstAttribute="centerY" secondItem="Jp9-ZA-3bs" secondAttribute="centerY" placeholder="YES" id="EU0-6y-TPk"/>
+                            <constraint firstItem="XLL-6O-VKG" firstAttribute="height" secondItem="Jp9-ZA-3bs" secondAttribute="height" id="Ifr-El-rde"/>
+                            <constraint firstAttribute="bottom" secondItem="XLL-6O-VKG" secondAttribute="bottom" id="K0t-mg-agu"/>
+                            <constraint firstItem="XLL-6O-VKG" firstAttribute="width" secondItem="Jp9-ZA-3bs" secondAttribute="width" placeholder="YES" id="L4G-Bd-cL8"/>
+                            <constraint firstItem="XLL-6O-VKG" firstAttribute="top" secondItem="Jp9-ZA-3bs" secondAttribute="top" id="LG8-OU-axT"/>
+                            <constraint firstAttribute="trailing" secondItem="XLL-6O-VKG" secondAttribute="trailing" constant="5" id="cu5-yN-Tze"/>
+                            <constraint firstItem="XLL-6O-VKG" firstAttribute="leading" secondItem="Jp9-ZA-3bs" secondAttribute="leading" constant="5" id="ddU-mr-EjX"/>
+                            <constraint firstItem="XLL-6O-VKG" firstAttribute="top" secondItem="Jp9-ZA-3bs" secondAttribute="top" placeholder="YES" id="g3g-Tr-GnZ"/>
+                            <constraint firstItem="XLL-6O-VKG" firstAttribute="centerX" secondItem="Jp9-ZA-3bs" secondAttribute="centerX" id="qJg-U6-axc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EU0-6y-TPk"/>
+                                <exclude reference="L4G-Bd-cL8"/>
+                                <exclude reference="g3g-Tr-GnZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="OnW-Fd-7xU"/>
+                    <connections>
+                        <outlet property="contactTableView" destination="XLL-6O-VKG" id="SXT-cA-f0P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybY-Kv-qPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
