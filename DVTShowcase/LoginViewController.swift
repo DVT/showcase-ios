@@ -18,6 +18,7 @@ class LoginViewController: DVTShowcaseViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.startup()
         let loginBtn = UIButton(type: .custom)
         loginBtn.frame = CGRect(x: 0, y: 0, width: 80, height: 35)
         loginBtn.setTitle("Log in", for: .normal)
@@ -28,7 +29,7 @@ class LoginViewController: DVTShowcaseViewController, UITextFieldDelegate {
         loginBtn.addTarget(self, action: #selector(authenticateUser(sender:)), for: .touchUpInside)
         
         loginBarButtonItem = UIBarButtonItem(customView: loginBtn)
-        missingLoginBarButtonItem = UIBarButtonItem(title: "Missing login details?", style: UIBarButtonItemStyle.plain, target: self, action: nil)
+        missingLoginBarButtonItem = UIBarButtonItem(title: "Missing login details?", style: UIBarButtonItemStyle.plain, target: self, action: #selector(emailButtonPressed(sender:)))
         missingLoginBarButtonItem?.tintColor = DVTShowcaseColor.blueColor
         let itemFlexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
         
@@ -42,9 +43,11 @@ class LoginViewController: DVTShowcaseViewController, UITextFieldDelegate {
         passwordTF?.inputAccessoryView = toolBar
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        self.startup()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        self.usernameTF?.becomeFirstResponder()
+        usernameTF?.text = "isop@jhb.dvt.co.za"
+        passwordTF?.text = "password"
     }
     
     func authenticateUser(sender: UIBarButtonItem) {
@@ -86,7 +89,6 @@ class LoginViewController: DVTShowcaseViewController, UITextFieldDelegate {
             self.loginContainerView?.frame = loginViewRect
         }) { (true) in
             UIView.animate(withDuration: 0.5, animations: {
-                self.usernameTF?.becomeFirstResponder()
                 var loginViewRect : CGRect
                 loginViewRect = (self.loginContainerView?.frame)!;
                 loginViewRect.origin.y += 0;
@@ -95,7 +97,9 @@ class LoginViewController: DVTShowcaseViewController, UITextFieldDelegate {
         }
     }
     
-    
+    func emailButtonPressed(sender: UIBarButtonItem) {
+        self.sendEmail(emailAddress: "mobile@dvt.co.za")
+    }
 }
 
 

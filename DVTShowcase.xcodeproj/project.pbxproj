@@ -24,6 +24,10 @@
 		D61E929E1F71442300B60518 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E929D1F71442300B60518 /* AboutViewController.swift */; };
 		D61E92A01F71443100B60518 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E929F1F71443100B60518 /* ContactViewController.swift */; };
 		D64395701F755D410085F3F3 /* CMMapLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = D643956F1F755D410085F3F3 /* CMMapLauncher.m */; };
+		D64395781F7A52BA0085F3F3 /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64395761F7A52BA0085F3F3 /* AboutTableViewCell.swift */; };
+		D64395791F7A52BA0085F3F3 /* AboutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D64395771F7A52BA0085F3F3 /* AboutTableViewCell.xib */; };
+		D643957B1F7A5A160085F3F3 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D643957A1F7A5A160085F3F3 /* AboutView.swift */; };
+		D643957D1F7A5A200085F3F3 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D643957C1F7A5A200085F3F3 /* AboutView.xib */; };
 		D64C4E871F728DE500C90F51 /* DVTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C4E861F728DE500C90F51 /* DVTApp.swift */; };
 		D64C4E8B1F72A42000C90F51 /* ShowcaseAppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C4E891F72A42000C90F51 /* ShowcaseAppTableViewCell.swift */; };
 		D64C4E8C1F72A42000C90F51 /* ShowcaseAppTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D64C4E8A1F72A42000C90F51 /* ShowcaseAppTableViewCell.xib */; };
@@ -76,6 +80,10 @@
 		D643956D1F755D400085F3F3 /* DVTShowcase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DVTShowcase-Bridging-Header.h"; sourceTree = "<group>"; };
 		D643956E1F755D410085F3F3 /* CMMapLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMMapLauncher.h; sourceTree = "<group>"; };
 		D643956F1F755D410085F3F3 /* CMMapLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMMapLauncher.m; sourceTree = "<group>"; };
+		D64395761F7A52BA0085F3F3 /* AboutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewCell.swift; sourceTree = "<group>"; };
+		D64395771F7A52BA0085F3F3 /* AboutTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutTableViewCell.xib; sourceTree = "<group>"; };
+		D643957A1F7A5A160085F3F3 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		D643957C1F7A5A200085F3F3 /* AboutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutView.xib; sourceTree = "<group>"; };
 		D64C4E861F728DE500C90F51 /* DVTApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVTApp.swift; sourceTree = "<group>"; };
 		D64C4E891F72A42000C90F51 /* ShowcaseAppTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowcaseAppTableViewCell.swift; sourceTree = "<group>"; };
 		D64C4E8A1F72A42000C90F51 /* ShowcaseAppTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowcaseAppTableViewCell.xib; sourceTree = "<group>"; };
@@ -270,6 +278,10 @@
 				D64C4E8A1F72A42000C90F51 /* ShowcaseAppTableViewCell.xib */,
 				D64C4E8D1F753CBA00C90F51 /* ContactTableViewCell.swift */,
 				D64C4E8E1F753CBA00C90F51 /* ContactTableViewCell.xib */,
+				D64395761F7A52BA0085F3F3 /* AboutTableViewCell.swift */,
+				D64395771F7A52BA0085F3F3 /* AboutTableViewCell.xib */,
+				D643957A1F7A5A160085F3F3 /* AboutView.swift */,
+				D643957C1F7A5A200085F3F3 /* AboutView.xib */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -402,9 +414,11 @@
 			files = (
 				3464468934A8B041FABD76D0 /* Info.plist in Resources */,
 				34644E7CB40618446ECCC134 /* Assets.xcassets in Resources */,
+				D643957D1F7A5A200085F3F3 /* AboutView.xib in Resources */,
 				D64C4E901F753CBA00C90F51 /* ContactTableViewCell.xib in Resources */,
 				3464475677FFE33378AD3B08 /* LaunchScreen.storyboard in Resources */,
 				3464448E8F8AC41D78838095 /* Main.storyboard in Resources */,
+				D64395791F7A52BA0085F3F3 /* AboutTableViewCell.xib in Resources */,
 				D64C4E8C1F72A42000C90F51 /* ShowcaseAppTableViewCell.xib in Resources */,
 				D61E92901F71282500B60518 /* GoogleService-Info.plist in Resources */,
 			);
@@ -490,8 +504,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D64C4E8F1F753CBA00C90F51 /* ContactTableViewCell.swift in Sources */,
+				D64395781F7A52BA0085F3F3 /* AboutTableViewCell.swift in Sources */,
 				D61E92941F7129D200B60518 /* FirebaseAPI.swift in Sources */,
 				D67FFFA01F6FD2B00063449C /* LoginViewController.swift in Sources */,
+				D643957B1F7A5A160085F3F3 /* AboutView.swift in Sources */,
 				D67FFF9D1F6FD2710063449C /* DVTShowcaseViewController.swift in Sources */,
 				D64395701F755D410085F3F3 /* CMMapLauncher.m in Sources */,
 				34644A8D9CFF624DF7DA8791 /* AppDelegate.swift in Sources */,

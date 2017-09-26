@@ -215,13 +215,35 @@
                     <view key="view" contentMode="scaleToFill" id="diD-rd-tVM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gWm-sY-Q0U">
+                                <rect key="frame" x="7" y="64" width="361" height="667"/>
+                                <color key="backgroundColor" red="0.98020301870748294" green="0.981000212585034" blue="0.97921981292517002" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96574723639455784" green="0.96314306972789121" blue="0.9631164965986394" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gWm-sY-Q0U" firstAttribute="centerX" secondItem="diD-rd-tVM" secondAttribute="centerX" id="QHi-oW-VsE"/>
+                            <constraint firstItem="gWm-sY-Q0U" firstAttribute="width" secondItem="diD-rd-tVM" secondAttribute="width" placeholder="YES" id="SCO-mS-faA"/>
+                            <constraint firstItem="gWm-sY-Q0U" firstAttribute="height" secondItem="diD-rd-tVM" secondAttribute="height" id="aut-OL-yZR"/>
+                            <constraint firstItem="gWm-sY-Q0U" firstAttribute="top" secondItem="hAR-Lb-72e" secondAttribute="bottom" id="ofn-vo-xyb"/>
+                            <constraint firstAttribute="trailing" secondItem="gWm-sY-Q0U" secondAttribute="trailing" constant="7" id="qSa-8Y-a5L"/>
+                            <constraint firstItem="gWm-sY-Q0U" firstAttribute="leading" secondItem="diD-rd-tVM" secondAttribute="leading" constant="7" id="x0k-7x-52t"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="SCO-mS-faA"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="pBP-Ib-m5D"/>
+                    <connections>
+                        <outlet property="aboutTableView" destination="gWm-sY-Q0U" id="IdZ-ET-tch"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qDv-cN-jCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="1632"/>
+            <point key="canvasLocation" x="924" y="1631.3343328335834"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="OTQ-ZO-FmQ">
@@ -235,20 +257,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XLL-6O-VKG">
-                                <rect key="frame" x="5" y="0.0" width="365" height="667"/>
-                                <color key="backgroundColor" red="0.96122980446870743" green="0.96261160712176863" blue="0.96064519556326522" alpha="1" colorSpace="calibratedRGB"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XLL-6O-VKG">
+                                <rect key="frame" x="7" y="0.0" width="361" height="667"/>
+                                <color key="backgroundColor" red="0.98054846943469387" green="0.98105335882244893" blue="0.97874149658367338" alpha="1" colorSpace="calibratedRGB"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96524234701700673" green="0.96279761900476202" blue="0.9653752126068027" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="XLL-6O-VKG" firstAttribute="centerY" secondItem="Jp9-ZA-3bs" secondAttribute="centerY" placeholder="YES" id="EU0-6y-TPk"/>
                             <constraint firstItem="XLL-6O-VKG" firstAttribute="height" secondItem="Jp9-ZA-3bs" secondAttribute="height" id="Ifr-El-rde"/>
                             <constraint firstAttribute="bottom" secondItem="XLL-6O-VKG" secondAttribute="bottom" id="K0t-mg-agu"/>
                             <constraint firstItem="XLL-6O-VKG" firstAttribute="width" secondItem="Jp9-ZA-3bs" secondAttribute="width" placeholder="YES" id="L4G-Bd-cL8"/>
                             <constraint firstItem="XLL-6O-VKG" firstAttribute="top" secondItem="Jp9-ZA-3bs" secondAttribute="top" id="LG8-OU-axT"/>
-                            <constraint firstAttribute="trailing" secondItem="XLL-6O-VKG" secondAttribute="trailing" constant="5" id="cu5-yN-Tze"/>
-                            <constraint firstItem="XLL-6O-VKG" firstAttribute="leading" secondItem="Jp9-ZA-3bs" secondAttribute="leading" constant="5" id="ddU-mr-EjX"/>
+                            <constraint firstAttribute="trailing" secondItem="XLL-6O-VKG" secondAttribute="trailing" constant="7" id="cu5-yN-Tze"/>
+                            <constraint firstItem="XLL-6O-VKG" firstAttribute="leading" secondItem="Jp9-ZA-3bs" secondAttribute="leading" constant="7" id="ddU-mr-EjX"/>
                             <constraint firstItem="XLL-6O-VKG" firstAttribute="top" secondItem="Jp9-ZA-3bs" secondAttribute="top" placeholder="YES" id="g3g-Tr-GnZ"/>
                             <constraint firstItem="XLL-6O-VKG" firstAttribute="centerX" secondItem="Jp9-ZA-3bs" secondAttribute="centerX" id="qJg-U6-axc"/>
                         </constraints>
