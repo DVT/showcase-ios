@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseCore
+import FirebaseDatabase
 
 
 @UIApplicationMain
@@ -18,7 +22,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
-    return true
+        Thread.sleep(forTimeInterval: 1)
+        FirebaseApp.configure()
+        Database.database().isPersistenceEnabled = true
+        
+        let didLoginBefore =  UserDefaults.standard.bool(forKey: "DidLoggedIn")
+        if  didLoginBefore {
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let dvtShowcaseTabController = mainStoryboard.instantiateViewController(withIdentifier: "dvtShowcaseTabController")
+            self.window?.rootViewController = dvtShowcaseTabController
+        }
+        return true
     }
 
 
