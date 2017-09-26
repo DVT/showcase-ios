@@ -20,8 +20,8 @@ class ContactViewController: DVTShowcaseViewController , UITableViewDelegate, UI
         self.contactTableView.delegate = self
         self.contactTableView.dataSource = self
         self.contactTableView.rowHeight = UITableViewAutomaticDimension
-        self.contactTableView.estimatedRowHeight = 130
-        self.contactTableView.register(UINib.init(nibName: "ContactTableViewCell", bundle: nil), forCellReuseIdentifier: "CellIdentifier")
+        self.contactTableView.estimatedRowHeight = 120
+        self.contactTableView.register(UINib.init(nibName: "AboutTableViewCell", bundle: nil), forCellReuseIdentifier: "CellIdentifier")
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -57,8 +57,9 @@ class ContactViewController: DVTShowcaseViewController , UITableViewDelegate, UI
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath) as! ContactTableViewCell
-        cell.contentView.layer.cornerRadius = 15.0
-        cell.layer.cornerRadius = 15.0
+        cell.layer.cornerRadius = 2.0
+        cell.layer.borderWidth = 0.5
+        cell.layer.borderColor = UIColor.lightGray.cgColor
         cell.selectionStyle = UITableViewCellSelectionStyle.none
         let dvtContact = dvtContactArray[indexPath.section]
         cell.cityNameLabel.text = dvtContact["name"] as? String

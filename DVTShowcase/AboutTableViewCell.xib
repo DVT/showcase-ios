@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="169" id="KGk-i7-Jjw" customClass="AboutTableViewCell" customModule="DVTShowcase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="169"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="169"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gz-qH-o5t">
+                        <rect key="frame" x="18" y="18" width="65" height="24"/>
+                        <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="18"/>
+                        <color key="textColor" red="0.01586415821" green="0.017431972770000002" blue="0.014668367329999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMv-EJ-dgc">
+                        <rect key="frame" x="13" y="44" width="351" height="2"/>
+                        <color key="backgroundColor" red="0.86423788270000002" green="0.86466305269999999" blue="0.86274978739999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="n49-wx-DTY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UF7-9V-eGZ">
+                        <rect key="frame" x="18" y="61" width="341" height="21.5"/>
+                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeg-AA-h2W">
+                        <rect key="frame" x="28.5" y="115" width="64" height="30"/>
+                        <state key="normal" title="WEBSITE">
+                            <color key="titleColor" red="0.0" green="0.41176470590000003" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0B0-SC-n7R">
+                        <rect key="frame" x="48" y="89" width="25" height="25"/>
+                        <color key="tintColor" red="0.0" green="0.41176470590000003" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="web"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaK-JU-Lj2">
+                        <rect key="frame" x="157" y="115" width="65" height="30"/>
+                        <state key="normal" title="TWITTER">
+                            <color key="titleColor" red="0.0" green="0.41176470590000003" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVE-Xk-8ea">
+                        <rect key="frame" x="176.5" y="89" width="25" height="25"/>
+                        <color key="tintColor" red="0.0" green="0.41176470590000003" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="twitter"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2h-Dk-Miw">
+                        <rect key="frame" x="277.5" y="115" width="79" height="30"/>
+                        <state key="normal" title="FACEBOOK">
+                            <color key="titleColor" red="0.0" green="0.41176470590000003" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tc4-eS-itQ">
+                        <rect key="frame" x="304" y="89" width="25" height="25"/>
+                        <color key="tintColor" red="0.0" green="0.41176470590000003" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="facebook"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UF7-9V-eGZ" firstAttribute="leading" secondItem="8gz-qH-o5t" secondAttribute="leading" id="0k6-7K-QzE"/>
+                    <constraint firstItem="DMv-EJ-dgc" firstAttribute="top" secondItem="8gz-qH-o5t" secondAttribute="bottom" constant="2" id="5Tg-5P-NY9"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="oeg-AA-h2W" secondAttribute="bottom" constant="15.5" id="5XA-i3-YMp"/>
+                    <constraint firstItem="8gz-qH-o5t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="ApU-MA-fKS"/>
+                    <constraint firstItem="DMv-EJ-dgc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="JXv-hP-T5g"/>
+                    <constraint firstItem="8gz-qH-o5t" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Jsn-c4-m4Y"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Tc4-eS-itQ" secondAttribute="trailing" constant="40" id="Ltm-Hv-rbL"/>
+                    <constraint firstItem="oeg-AA-h2W" firstAttribute="centerX" secondItem="0B0-SC-n7R" secondAttribute="centerX" id="Pb3-WW-uxT"/>
+                    <constraint firstItem="Tc4-eS-itQ" firstAttribute="top" secondItem="0B0-SC-n7R" secondAttribute="top" id="R3s-YR-16V"/>
+                    <constraint firstItem="YVE-Xk-8ea" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="U3C-7S-0BN"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="DMv-EJ-dgc" secondAttribute="trailing" constant="5" id="XCL-X8-SzC"/>
+                    <constraint firstItem="Tc4-eS-itQ" firstAttribute="centerX" secondItem="l2h-Dk-Miw" secondAttribute="centerX" id="ah1-Ke-6RM"/>
+                    <constraint firstItem="YVE-Xk-8ea" firstAttribute="top" secondItem="0B0-SC-n7R" secondAttribute="top" id="f2N-RY-PI4"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="UF7-9V-eGZ" secondAttribute="trailing" constant="10" id="gDF-Xw-YpH"/>
+                    <constraint firstItem="oaK-JU-Lj2" firstAttribute="centerX" secondItem="YVE-Xk-8ea" secondAttribute="centerX" id="hk2-l7-HeK"/>
+                    <constraint firstItem="oaK-JU-Lj2" firstAttribute="top" secondItem="YVE-Xk-8ea" secondAttribute="bottom" constant="1" id="kIl-TO-a7g"/>
+                    <constraint firstItem="l2h-Dk-Miw" firstAttribute="top" secondItem="Tc4-eS-itQ" secondAttribute="bottom" constant="1" id="njG-06-MUv"/>
+                    <constraint firstItem="0B0-SC-n7R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="40" id="qN6-AQ-Ay9"/>
+                    <constraint firstItem="UF7-9V-eGZ" firstAttribute="top" secondItem="DMv-EJ-dgc" secondAttribute="bottom" constant="15" id="xnF-ms-tga"/>
+                    <constraint firstItem="0B0-SC-n7R" firstAttribute="top" secondItem="UF7-9V-eGZ" secondAttribute="bottom" constant="7" placeholder="YES" id="y6y-Yy-k0i"/>
+                    <constraint firstItem="oeg-AA-h2W" firstAttribute="top" secondItem="0B0-SC-n7R" secondAttribute="bottom" constant="1" id="ys4-oR-siU"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="y6y-Yy-k0i"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="aboutLabel" destination="UF7-9V-eGZ" id="PB6-WC-p3i"/>
+                <outlet property="facebookButton" destination="l2h-Dk-Miw" id="bb6-eD-BZh"/>
+                <outlet property="facebookIconButton" destination="Tc4-eS-itQ" id="YnI-j8-WrZ"/>
+                <outlet property="twitterButton" destination="oaK-JU-Lj2" id="TZD-qr-Tgt"/>
+                <outlet property="twitterIconButton" destination="YVE-Xk-8ea" id="GQK-Dc-Icy"/>
+                <outlet property="websiteButton" destination="oeg-AA-h2W" id="jdu-kF-reZ"/>
+                <outlet property="websiteIconButton" destination="0B0-SC-n7R" id="mPV-oR-kE3"/>
+            </connections>
+            <point key="canvasLocation" x="62.5" y="116.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="facebook" width="25" height="25"/>
+        <image name="twitter" width="25" height="25"/>
+        <image name="web" width="25" height="25"/>
+    </resources>
+</document>

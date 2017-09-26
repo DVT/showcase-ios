@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AboutView" customModule="DVTShowcase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dvt_tagline" translatesAutoresizingMaskIntoConstraints="NO" id="dF6-UE-P1y">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dF6-UE-P1y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3Li-Tb-jeG"/>
+                <constraint firstItem="dF6-UE-P1y" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="ADX-qZ-HFp"/>
+                <constraint firstAttribute="trailing" secondItem="dF6-UE-P1y" secondAttribute="trailing" id="CS6-fO-Q2M"/>
+                <constraint firstItem="dF6-UE-P1y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="G4V-uk-Nd4"/>
+                <constraint firstAttribute="bottom" secondItem="dF6-UE-P1y" secondAttribute="bottom" id="rSW-mS-qQj"/>
+                <constraint firstItem="dF6-UE-P1y" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="smv-o6-TjB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="34.5" y="-203.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dvt_tagline" width="1203" height="561"/>
+    </resources>
+</document>
