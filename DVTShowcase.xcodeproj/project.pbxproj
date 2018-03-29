@@ -16,7 +16,11 @@
 		34644BB2A27ED4BF49C3E409 /* DVTShowcaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34644E3DA4A9D62DDC296632 /* DVTShowcaseTests.swift */; };
 		34644C9DC32D875C16C31450 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34644F94FD5A595E4D55BC50 /* Info.plist */; };
 		34644E7CB40618446ECCC134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34644B979FD65E7DBC79A7E8 /* Assets.xcassets */; };
-		A01CFFD9CB8EC65713B2CED3 /* Pods_DVTShowcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C43347DBDF0BE5D4645B602 /* Pods_DVTShowcase.framework */; };
+		8A2FF25E90A5F55FDB11FC80 /* Pods_DVTShowcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564D2E00940EDB588226E89A /* Pods_DVTShowcase.framework */; };
+		A3D9C14C206BC9EE009CBEFD /* AppNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D9C14A206BC9EE009CBEFD /* AppNameTableViewCell.swift */; };
+		A3D9C14D206BC9EE009CBEFD /* AppNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D9C14B206BC9EE009CBEFD /* AppNameTableViewCell.xib */; };
+		A3D9C150206BD3A3009CBEFD /* AppDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D9C14E206BD3A3009CBEFD /* AppDescriptionTableViewCell.swift */; };
+		A3D9C151206BD3A3009CBEFD /* AppDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D9C14F206BD3A3009CBEFD /* AppDescriptionTableViewCell.xib */; };
 		D61E92901F71282500B60518 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D61E928F1F71282500B60518 /* GoogleService-Info.plist */; };
 		D61E92941F7129D200B60518 /* FirebaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E92931F7129D200B60518 /* FirebaseAPI.swift */; };
 		D61E92961F71415300B60518 /* DVTShowcaseTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E92951F71415300B60518 /* DVTShowcaseTabController.swift */; };
@@ -36,6 +40,9 @@
 		D67FFF9D1F6FD2710063449C /* DVTShowcaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67FFF9C1F6FD2710063449C /* DVTShowcaseViewController.swift */; };
 		D67FFFA01F6FD2B00063449C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67FFF9F1F6FD2B00063449C /* LoginViewController.swift */; };
 		D6A629F31F6FF7590070994C /* DVTShowcaseColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A629F21F6FF7580070994C /* DVTShowcaseColor.swift */; };
+		ED3E1AC320515B6900B5DDF1 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3E1AC220515B6900B5DDF1 /* AppDetailViewController.swift */; };
+		ED3E1AC52052757400B5DDF1 /* AppDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3E1AC42052757400B5DDF1 /* AppDetailViewController.xib */; };
+		ED3E1AC72052771C00B5DDF1 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3E1AC62052771C00B5DDF1 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C43347DBDF0BE5D4645B602 /* Pods_DVTShowcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DVTShowcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E2E4355EF3CACFCEFCC453D /* Pods-DVTShowcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DVTShowcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-DVTShowcase/Pods-DVTShowcase.release.xcconfig"; sourceTree = "<group>"; };
+		2E9B9473F40E9B685E213700 /* Pods-DVTShowcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DVTShowcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DVTShowcase/Pods-DVTShowcase.debug.xcconfig"; sourceTree = "<group>"; };
 		3464413E10AAE7FE7C727D27 /* DVTShowcaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DVTShowcaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34644285A0E09742469F17F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		346443BC451C87CE509E5837 /* DVTShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DVTShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +76,11 @@
 		34644CFA9AC6F8453224C05E /* DVTShowcaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVTShowcaseUITests.swift; sourceTree = "<group>"; };
 		34644E3DA4A9D62DDC296632 /* DVTShowcaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVTShowcaseTests.swift; sourceTree = "<group>"; };
 		34644F94FD5A595E4D55BC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		5911324683A68C741EEEF336 /* Pods-DVTShowcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DVTShowcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DVTShowcase/Pods-DVTShowcase.debug.xcconfig"; sourceTree = "<group>"; };
+		564D2E00940EDB588226E89A /* Pods_DVTShowcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DVTShowcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3D9C14A206BC9EE009CBEFD /* AppNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNameTableViewCell.swift; sourceTree = "<group>"; };
+		A3D9C14B206BC9EE009CBEFD /* AppNameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppNameTableViewCell.xib; sourceTree = "<group>"; };
+		A3D9C14E206BD3A3009CBEFD /* AppDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		A3D9C14F206BD3A3009CBEFD /* AppDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppDescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		D61E928F1F71282500B60518 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D61E92931F7129D200B60518 /* FirebaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAPI.swift; sourceTree = "<group>"; };
 		D61E92951F71415300B60518 /* DVTShowcaseTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVTShowcaseTabController.swift; sourceTree = "<group>"; };
@@ -92,6 +102,10 @@
 		D67FFF9C1F6FD2710063449C /* DVTShowcaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVTShowcaseViewController.swift; sourceTree = "<group>"; };
 		D67FFF9F1F6FD2B00063449C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D6A629F21F6FF7580070994C /* DVTShowcaseColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVTShowcaseColor.swift; sourceTree = SOURCE_ROOT; };
+		ED3E1AC220515B6900B5DDF1 /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
+		ED3E1AC42052757400B5DDF1 /* AppDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppDetailViewController.xib; sourceTree = "<group>"; };
+		ED3E1AC62052771C00B5DDF1 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		F2C77BBE2E951DA66EAD7472 /* Pods-DVTShowcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DVTShowcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-DVTShowcase/Pods-DVTShowcase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A01CFFD9CB8EC65713B2CED3 /* Pods_DVTShowcase.framework in Frameworks */,
+				8A2FF25E90A5F55FDB11FC80 /* Pods_DVTShowcase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,10 +134,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		165FA7D6FC4C344A948C1E31 /* Frameworks */ = {
+		230819CF38137795BB70A3AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1C43347DBDF0BE5D4645B602 /* Pods_DVTShowcase.framework */,
+				564D2E00940EDB588226E89A /* Pods_DVTShowcase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -150,6 +164,7 @@
 		3464498E7DD1F31C770E8791 /* DVTShowcase */ = {
 			isa = PBXGroup;
 			children = (
+				ED31C56120513270000945C8 /* Utilities */,
 				D64C4E851F728DA200C90F51 /* Model */,
 				D61E92A11F71676600B60518 /* Reusable components */,
 				D6A629F21F6FF7580070994C /* DVTShowcaseColor.swift */,
@@ -182,16 +197,16 @@
 				D61E928F1F71282500B60518 /* GoogleService-Info.plist */,
 				346441CF723D96E81470BCCD /* DVTShowcaseTests */,
 				346449EDC21B0A5D7BAE2D52 /* DVTShowcaseUITests */,
-				CFD3399CDC35478F70E7EC7A /* Pods */,
-				165FA7D6FC4C344A948C1E31 /* Frameworks */,
+				B3810312CFD8B6EEEDFE997A /* Pods */,
+				230819CF38137795BB70A3AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		CFD3399CDC35478F70E7EC7A /* Pods */ = {
+		B3810312CFD8B6EEEDFE997A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5911324683A68C741EEEF336 /* Pods-DVTShowcase.debug.xcconfig */,
-				2E2E4355EF3CACFCEFCC453D /* Pods-DVTShowcase.release.xcconfig */,
+				2E9B9473F40E9B685E213700 /* Pods-DVTShowcase.debug.xcconfig */,
+				F2C77BBE2E951DA66EAD7472 /* Pods-DVTShowcase.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -289,6 +304,8 @@
 		D67FFF9A1F6FD20A0063449C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ED3E1AC82052819E00B5DDF1 /* NavifationController */,
+				ED3E1AC120515B1E00B5DDF1 /* App Detail View Controller */,
 				D64C4E881F72A40100C90F51 /* Custom Views */,
 				D61E929A1F7143D600B60518 /* Contact View Controllers */,
 				D61E92991F7143CB00B60518 /* About View Controllers */,
@@ -305,6 +322,34 @@
 				D61E92951F71415300B60518 /* DVTShowcaseTabController.swift */,
 			);
 			name = "Parent Classes";
+			sourceTree = "<group>";
+		};
+		ED31C56120513270000945C8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ED3E1AC62052771C00B5DDF1 /* UIViewControllerExtension.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		ED3E1AC120515B1E00B5DDF1 /* App Detail View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ED3E1AC220515B6900B5DDF1 /* AppDetailViewController.swift */,
+				ED3E1AC42052757400B5DDF1 /* AppDetailViewController.xib */,
+				A3D9C14A206BC9EE009CBEFD /* AppNameTableViewCell.swift */,
+				A3D9C14B206BC9EE009CBEFD /* AppNameTableViewCell.xib */,
+				A3D9C14E206BD3A3009CBEFD /* AppDescriptionTableViewCell.swift */,
+				A3D9C14F206BD3A3009CBEFD /* AppDescriptionTableViewCell.xib */,
+			);
+			name = "App Detail View Controller";
+			sourceTree = "<group>";
+		};
+		ED3E1AC82052819E00B5DDF1 /* NavifationController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NavifationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,12 +395,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34644FB213B51585018F90AE /* Build configuration list for PBXNativeTarget "DVTShowcase" */;
 			buildPhases = (
-				6FFD63FB7B2BB567D22E0E39 /* [CP] Check Pods Manifest.lock */,
+				166EDA7A9CFA08BB759002BA /* [CP] Check Pods Manifest.lock */,
 				34644BCC7B606D1993419B04 /* Sources */,
 				346442BA3498BC52CA3D3170 /* Frameworks */,
 				34644B8D45E1017CA2A82BC4 /* Resources */,
-				0B2AE9E0D6605666565C552E /* [CP] Embed Pods Frameworks */,
-				1E56010174DCA60F663F729A /* [CP] Copy Pods Resources */,
+				9A8AA87F3447CE10F378FCD7 /* [CP] Embed Pods Frameworks */,
+				3566439ED442D8B64802D09D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -375,7 +420,7 @@
 				ORGANIZATIONNAME = DVT;
 				TargetAttributes = {
 					34644CE70F41E68F10323185 = {
-						DevelopmentTeam = 69CVBN965U;
+						DevelopmentTeam = GLK7J5PP82;
 						LastSwiftMigration = 0830;
 					};
 				};
@@ -412,7 +457,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D9C151206BD3A3009CBEFD /* AppDescriptionTableViewCell.xib in Resources */,
 				3464468934A8B041FABD76D0 /* Info.plist in Resources */,
+				A3D9C14D206BC9EE009CBEFD /* AppNameTableViewCell.xib in Resources */,
+				ED3E1AC52052757400B5DDF1 /* AppDetailViewController.xib in Resources */,
 				34644E7CB40618446ECCC134 /* Assets.xcassets in Resources */,
 				D643957D1F7A5A200085F3F3 /* AboutView.xib in Resources */,
 				D64C4E901F753CBA00C90F51 /* ContactTableViewCell.xib in Resources */,
@@ -435,22 +483,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B2AE9E0D6605666565C552E /* [CP] Embed Pods Frameworks */ = {
+		166EDA7A9CFA08BB759002BA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DVTShowcase-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DVTShowcase/Pods-DVTShowcase-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1E56010174DCA60F663F729A /* [CP] Copy Pods Resources */ = {
+		3566439ED442D8B64802D09D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -465,19 +516,30 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DVTShowcase/Pods-DVTShowcase-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6FFD63FB7B2BB567D22E0E39 /* [CP] Check Pods Manifest.lock */ = {
+		9A8AA87F3447CE10F378FCD7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DVTShowcase/Pods-DVTShowcase-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/KVSpinnerView/KVSpinnerView.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVSpinnerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DVTShowcase/Pods-DVTShowcase-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -506,12 +568,16 @@
 				D64C4E8F1F753CBA00C90F51 /* ContactTableViewCell.swift in Sources */,
 				D64395781F7A52BA0085F3F3 /* AboutTableViewCell.swift in Sources */,
 				D61E92941F7129D200B60518 /* FirebaseAPI.swift in Sources */,
+				ED3E1AC72052771C00B5DDF1 /* UIViewControllerExtension.swift in Sources */,
+				A3D9C14C206BC9EE009CBEFD /* AppNameTableViewCell.swift in Sources */,
 				D67FFFA01F6FD2B00063449C /* LoginViewController.swift in Sources */,
 				D643957B1F7A5A160085F3F3 /* AboutView.swift in Sources */,
 				D67FFF9D1F6FD2710063449C /* DVTShowcaseViewController.swift in Sources */,
 				D64395701F755D410085F3F3 /* CMMapLauncher.m in Sources */,
 				34644A8D9CFF624DF7DA8791 /* AppDelegate.swift in Sources */,
 				D64C4E871F728DE500C90F51 /* DVTApp.swift in Sources */,
+				ED3E1AC320515B6900B5DDF1 /* AppDetailViewController.swift in Sources */,
+				A3D9C150206BD3A3009CBEFD /* AppDescriptionTableViewCell.swift in Sources */,
 				D6A629F31F6FF7590070994C /* DVTShowcaseColor.swift in Sources */,
 				D64C4E8B1F72A42000C90F51 /* ShowcaseAppTableViewCell.swift in Sources */,
 				D61E92A01F71443100B60518 /* ContactViewController.swift in Sources */,
@@ -601,11 +667,11 @@
 		};
 		3464419E89282275723A778D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5911324683A68C741EEEF336 /* Pods-DVTShowcase.debug.xcconfig */;
+			baseConfigurationReference = 2E9B9473F40E9B685E213700 /* Pods-DVTShowcase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 69CVBN965U;
+				DEVELOPMENT_TEAM = GLK7J5PP82;
 				INFOPLIST_FILE = DVTShowcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = za.co.dvt.DVTShowcase;
@@ -656,11 +722,11 @@
 		};
 		34644DEB17D0BAF83AAAF056 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E2E4355EF3CACFCEFCC453D /* Pods-DVTShowcase.release.xcconfig */;
+			baseConfigurationReference = F2C77BBE2E951DA66EAD7472 /* Pods-DVTShowcase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 69CVBN965U;
+				DEVELOPMENT_TEAM = GLK7J5PP82;
 				INFOPLIST_FILE = DVTShowcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = za.co.dvt.DVTShowcase;
