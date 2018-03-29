@@ -21,7 +21,7 @@ class ContactViewController: DVTShowcaseViewController , UITableViewDelegate, UI
         self.contactTableView.dataSource = self
         self.contactTableView.rowHeight = UITableViewAutomaticDimension
         self.contactTableView.estimatedRowHeight = 120
-        self.contactTableView.register(UINib.init(nibName: "AboutTableViewCell", bundle: nil), forCellReuseIdentifier: "CellIdentifier")
+        self.contactTableView.register(UINib.init(nibName: "ContactTableViewCell", bundle: nil), forCellReuseIdentifier: "CellIdentifier")
     }
     
     override func viewDidAppear(_ animated: Bool) {
