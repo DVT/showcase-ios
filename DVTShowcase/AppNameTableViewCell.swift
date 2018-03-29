@@ -1,15 +1,14 @@
-//
-//  AppNameTableViewCell.swift
-//  DVTShowcase
-//
-//  Created by Kagiso Mohajane on 2018/03/28.
-//  Copyright © 2018 DVT. All rights reserved.
-//
 
 import UIKit
 
 class AppNameTableViewCell: UITableViewCell {
+    
+    //Mark: Properties
+    private var firebaseApi = FirebaseAPI.sharedFirebaseAPI
 
+    @IBOutlet weak var appIcon: UIImageView!
+    @IBOutlet weak var appName: UILabel!
+    @IBOutlet weak var shortDescription: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +18,18 @@ class AppNameTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    func populateCell(with dvtApp: [String: AnyObject]) {
+        appName.text = dvtApp["name"] as? String
+        shortDescription.text = dvtApp["shortDescription"] as? String
+        firebaseApi.getIconImage(iconUrl: dvtApp["iconUrl"] as? String!) { (success, image, message) in
+            if success {
+                if let image = image {
+                    self.appIcon.image = image
+                }
+                
+            }
+        }
     }
     
 }
