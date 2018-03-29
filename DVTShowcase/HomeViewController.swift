@@ -10,10 +10,17 @@ import UIKit
 
 
 class HomeViewController: DVTShowcaseViewController, UITableViewDelegate, UITableViewDataSource {
+    //MARK: IBOutlets
+    
     @IBOutlet weak var showcaseAppTableView: UITableView!
-
+    
+    //MARK: Properties
+    
     var showcaseAppArray = [[String: AnyObject?]]()
     let firebaseApi = FirebaseAPI.sharedFirebaseAPI
+    
+    //MARK: Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,7 +36,6 @@ class HomeViewController: DVTShowcaseViewController, UITableViewDelegate, UITabl
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-//            self.showLoading(view: self.view)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,18 +56,21 @@ class HomeViewController: DVTShowcaseViewController, UITableViewDelegate, UITabl
         }
     }
     
+    //MARK: TableView Delegate 
+    
     func numberOfSections(in tableView: UITableView) -> Int {
-        return showcaseAppArray.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return showcaseAppArray.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath) as! ShowcaseAppTableViewCell
         cell.selectionStyle = UITableViewCellSelectionStyle.none
-        let showcaseApps = showcaseAppArray[indexPath.section]
+        let showcaseApps = showcaseAppArray[indexPath.row]
         cell.appNameLabel.text = showcaseApps["name"] as? String
         cell.clientNameLabel.text = showcaseApps["client"] as? String
         cell.shortDescriptionLabel.text = showcaseApps["shortDescription"] as? String
@@ -80,6 +89,14 @@ class HomeViewController: DVTShowcaseViewController, UITableViewDelegate, UITabl
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 8
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var selectedApp = self.showcaseAppArray[indexPath.row]
+        print("Selected App: \(selectedApp)")
+       let appDetailViewController = AppDetailViewController(with: selectedApp)
+        present(viewController: appDetailViewController)
+    }
+
     
     func heightForText(text: String) -> CGFloat {
         let MAX_HEIGHT = 20000
