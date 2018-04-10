@@ -82,6 +82,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedApp = showcaseApps[indexPath.row]
+        let appDetailViewController = AppDetailViewController(with: selectedApp)
+        push(appDetailViewController)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
