@@ -10,7 +10,7 @@ class HomeViewController: DVTShowcaseViewController {
     
     //MARK: Properties
     
-    var showcaseAppArray = [[String: AnyObject?]]()
+    var showcaseApps = [[String: AnyObject?]]()
     let firebaseApi = FirebaseAPI.sharedFirebaseAPI
     
     //MARK: Lifecycle Methods
@@ -21,15 +21,11 @@ class HomeViewController: DVTShowcaseViewController {
         setUpTableView()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         firebaseApi.getShowcaseApp { (success, showcaseAppArray, message) in
             if success {
-                self.showcaseAppArray = showcaseAppArray
+                self.showcaseApps = showcaseAppArray
                 DispatchQueue.main.async(execute: { () -> Void in
                     self.showcaseAppTableView.reloadData()
                 })
@@ -52,8 +48,8 @@ class HomeViewController: DVTShowcaseViewController {
     }
     
     private func setUpNavigationBar() {
-        let narBArImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 40))
-        narBArImageView.image = UIImage(named: "dvt_icon")
+        let navBarImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 40))
+        navBarImageView.image = UIImage(named: "dvt_icon")
         self.navigationItem.title = "DVT App Showcase"
     }
     
@@ -67,17 +63,17 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return  showcaseAppArray.count
+        return  showcaseApps.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath) as! ShowcaseAppTableViewCell
         cell.selectionStyle = UITableViewCellSelectionStyle.none
-        let showcaseApps = showcaseAppArray[indexPath.row]
-        cell.appNameLabel.text = showcaseApps["name"] as? String
-        cell.clientNameLabel.text = showcaseApps["client"] as? String
-        cell.shortDescriptionLabel.text = showcaseApps["shortDescription"] as? String
-        firebaseApi.getIconImage(iconUrl: showcaseApps["iconUrl"] as? String!) { (success, image, message) in
+        let showcaseApp = showcaseApps[indexPath.row]
+        cell.appNameLabel.text = showcaseApp["name"] as? String
+        cell.clientNameLabel.text = showcaseApp["client"] as? String
+        cell.shortDescriptionLabel.text = showcaseApp["shortDescription"] as? String
+        firebaseApi.getIconImage(iconUrl: showcaseApp["iconUrl"] as? String!) { (success, image, message) in
             if success {
                 cell.appIconImageView.image = image
             }
@@ -86,7 +82,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("indexPathSelected: \(indexPath.row)")
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
