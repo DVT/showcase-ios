@@ -2,29 +2,23 @@
 import UIKit
 
 
-class HomeViewController: DVTShowcaseViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: DVTShowcaseViewController {
     
     //MARK: IBOutlets
     
     @IBOutlet weak var showcaseAppTableView: UITableView!
-
+    
     //MARK: Properties
     
     var showcaseAppArray = [[String: AnyObject?]]()
     let firebaseApi = FirebaseAPI.sharedFirebaseAPI
     
     //MARK: Lifecycle Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        let narBArImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 40))
-        narBArImageView.image = UIImage(named: "dvt_icon")
-        self.navigationItem.title = "DVT App Showcase"
-        self.showcaseAppTableView.delegate = self
-        self.showcaseAppTableView.dataSource = self
-        self.showcaseAppTableView.rowHeight = UITableViewAutomaticDimension
-        self.showcaseAppTableView.estimatedRowHeight = 130
-        self.showcaseAppTableView.register(UINib.init(nibName: "ShowcaseAppTableViewCell", bundle: nil), forCellReuseIdentifier: "CellIdentifier")
+        setUpNavigationBar()
+        setUpTableView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -44,9 +38,29 @@ class HomeViewController: DVTShowcaseViewController, UITableViewDelegate, UITabl
             }
         }
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    func setUpTableView() {
+        self.showcaseAppTableView.delegate = self
+        self.showcaseAppTableView.dataSource = self
+        self.showcaseAppTableView.rowHeight = UITableViewAutomaticDimension
+        self.showcaseAppTableView.estimatedRowHeight = 130
+        self.showcaseAppTableView.register(UINib.init(nibName: String(describing: ShowcaseAppTableViewCell.self), bundle: nil), forCellReuseIdentifier: "CellIdentifier")
+    }
+    
+    private func setUpNavigationBar() {
+        let narBArImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 40))
+        narBArImageView.image = UIImage(named: "dvt_icon")
+        self.navigationItem.title = "DVT App Showcase"
+    }
+    
+    
+}
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -72,7 +86,7 @@ class HomeViewController: DVTShowcaseViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        print("indexPathSelected: \(indexPath.row)")
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -82,17 +96,4 @@ class HomeViewController: DVTShowcaseViewController, UITableViewDelegate, UITabl
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 8
     }
-    
-    func heightForText(text: String) -> CGFloat {
-        let MAX_HEIGHT = 20000
-        let textView = UITextView(frame: CGRect(x: 0, y: 0, width: 320, height: MAX_HEIGHT))
-        textView.text = text
-        textView.font = UIFont.boldSystemFont(ofSize: 17)
-        textView.sizeToFit()
-        return textView.frame.size.height
-    }
-
-    
-    
-    
 }
