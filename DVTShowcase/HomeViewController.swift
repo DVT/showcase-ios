@@ -1,19 +1,19 @@
-//
-//  HomeViewController.swift
-//  DVTShowcase
-//
-//  Created by Idris SOP on 2017/09/19.
-//  Copyright © 2017 DVT. All rights reserved.
-//
 
 import UIKit
 
 
 class HomeViewController: DVTShowcaseViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    //MARK: IBOutlets
+    
     @IBOutlet weak var showcaseAppTableView: UITableView!
 
+    //MARK: Properties
+    
     var showcaseAppArray = [[String: AnyObject?]]()
     let firebaseApi = FirebaseAPI.sharedFirebaseAPI
+    
+    //MARK: Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,7 +29,6 @@ class HomeViewController: DVTShowcaseViewController, UITableViewDelegate, UITabl
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-//            self.showLoading(view: self.view)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,29 +38,28 @@ class HomeViewController: DVTShowcaseViewController, UITableViewDelegate, UITabl
                 self.showcaseAppArray = showcaseAppArray
                 DispatchQueue.main.async(execute: { () -> Void in
                     self.showcaseAppTableView.reloadData()
-//                    self.hideLoading()
                 })
             } else {
-//                DispatchQueue.main.async(execute: { () -> Void in
-//                    self.hideLoading()
-//                })
                 self.showAlert(title: "Error!", message: message!)
             }
         }
     }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return showcaseAppArray.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return  showcaseAppArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath) as! ShowcaseAppTableViewCell
         cell.selectionStyle = UITableViewCellSelectionStyle.none
-        let showcaseApps = showcaseAppArray[indexPath.section]
+        let showcaseApps = showcaseAppArray[indexPath.row]
         cell.appNameLabel.text = showcaseApps["name"] as? String
         cell.clientNameLabel.text = showcaseApps["client"] as? String
         cell.shortDescriptionLabel.text = showcaseApps["shortDescription"] as? String
@@ -71,6 +69,10 @@ class HomeViewController: DVTShowcaseViewController, UITableViewDelegate, UITabl
             }
         }
         return cell;
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -90,20 +92,7 @@ class HomeViewController: DVTShowcaseViewController, UITableViewDelegate, UITabl
         return textView.frame.size.height
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
 }
