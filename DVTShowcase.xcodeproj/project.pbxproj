@@ -74,7 +74,7 @@
 		34644E3DA4A9D62DDC296632 /* DVTShowcaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVTShowcaseTests.swift; sourceTree = "<group>"; };
 		34644F94FD5A595E4D55BC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		5911324683A68C741EEEF336 /* Pods-DVTShowcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DVTShowcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DVTShowcase/Pods-DVTShowcase.debug.xcconfig"; sourceTree = "<group>"; };
-		A3D751F9207CB38D0014C46C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = ../../../../Desktop/StashExtensions/UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		A3D751F9207CB38D0014C46C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		A3D751FC207CB46D0014C46C /* AppDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppDetailViewController.xib; sourceTree = "<group>"; };
 		A3D751FD207CB46D0014C46C /* AppDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
 		D61E928F1F71282500B60518 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
