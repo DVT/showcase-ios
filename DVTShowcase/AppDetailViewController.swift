@@ -4,33 +4,31 @@ import UIKit
 
 class AppDetailViewController: UIViewController {
 
-    private var selectedApp: [String: AnyObject?]
-    
     //MARK: IBOutlets
     
     @IBOutlet weak var nameContentView: UIView!
     @IBOutlet weak var galleryContentView: UIView!
     @IBOutlet weak var descriptionContentView: UIView!
     
+    //MARK: Properties
+    
+    private var selectedApp: DVTApp
+    
+    //MARK: Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = selectedApp["name"] as? String
-
+        self.navigationItem.title = selectedApp.client
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    init(with dvtApp:[String: AnyObject?]) {
+    init(with dvtApp:DVTApp) {
         selectedApp = dvtApp
+        print(dvtApp)
         super.init(nibName: String(describing: AppDetailViewController.self), bundle: nil)
     }
-   
+    
     required init?(coder aDecoder: NSCoder) {
-        self.selectedApp = [:]
-        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
     }
 
 }
