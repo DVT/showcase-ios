@@ -83,7 +83,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedApp = showcaseApps[indexPath.row]
-        let appDetailViewController = AppDetailViewController(with: selectedApp)
+        let dvtApp = DVTApp(with: selectedApp as [String : AnyObject])
+        let appDetailViewController = AppDetailViewController(with: dvtApp)
         push(appDetailViewController)
 
     }
