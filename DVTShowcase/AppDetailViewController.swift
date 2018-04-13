@@ -23,7 +23,6 @@ class AppDetailViewController: UIViewController {
 
     init(with dvtApp:DVTApp) {
         selectedApp = dvtApp
-        print(dvtApp)
         super.init(nibName: String(describing: AppDetailViewController.self), bundle: nil)
     }
     
