@@ -17,6 +17,9 @@
 		34644C9DC32D875C16C31450 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34644F94FD5A595E4D55BC50 /* Info.plist */; };
 		34644E7CB40618446ECCC134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34644B979FD65E7DBC79A7E8 /* Assets.xcassets */; };
 		A01CFFD9CB8EC65713B2CED3 /* Pods_DVTShowcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C43347DBDF0BE5D4645B602 /* Pods_DVTShowcase.framework */; };
+		A3D751FA207CB38E0014C46C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D751F9207CB38D0014C46C /* UIViewControllerExtension.swift */; };
+		A3D751FE207CB46D0014C46C /* AppDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D751FC207CB46D0014C46C /* AppDetailViewController.xib */; };
+		A3D751FF207CB46D0014C46C /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D751FD207CB46D0014C46C /* AppDetailViewController.swift */; };
 		D61E92901F71282500B60518 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D61E928F1F71282500B60518 /* GoogleService-Info.plist */; };
 		D61E92941F7129D200B60518 /* FirebaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E92931F7129D200B60518 /* FirebaseAPI.swift */; };
 		D61E92961F71415300B60518 /* DVTShowcaseTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E92951F71415300B60518 /* DVTShowcaseTabController.swift */; };
@@ -71,6 +74,9 @@
 		34644E3DA4A9D62DDC296632 /* DVTShowcaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVTShowcaseTests.swift; sourceTree = "<group>"; };
 		34644F94FD5A595E4D55BC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		5911324683A68C741EEEF336 /* Pods-DVTShowcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DVTShowcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DVTShowcase/Pods-DVTShowcase.debug.xcconfig"; sourceTree = "<group>"; };
+		A3D751F9207CB38D0014C46C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		A3D751FC207CB46D0014C46C /* AppDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppDetailViewController.xib; sourceTree = "<group>"; };
+		A3D751FD207CB46D0014C46C /* AppDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
 		D61E928F1F71282500B60518 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D61E92931F7129D200B60518 /* FirebaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAPI.swift; sourceTree = "<group>"; };
 		D61E92951F71415300B60518 /* DVTShowcaseTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVTShowcaseTabController.swift; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 		3464498E7DD1F31C770E8791 /* DVTShowcase */ = {
 			isa = PBXGroup;
 			children = (
+				A3D751F4207CB32F0014C46C /* Extensions */,
 				D64C4E851F728DA200C90F51 /* Model */,
 				D61E92A11F71676600B60518 /* Reusable components */,
 				D6A629F21F6FF7580070994C /* DVTShowcaseColor.swift */,
@@ -185,6 +192,23 @@
 				CFD3399CDC35478F70E7EC7A /* Pods */,
 				165FA7D6FC4C344A948C1E31 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		A3D751F4207CB32F0014C46C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A3D751F9207CB38D0014C46C /* UIViewControllerExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A3D751FB207CB3B70014C46C /* Application Detiail Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3D751FD207CB46D0014C46C /* AppDetailViewController.swift */,
+				A3D751FC207CB46D0014C46C /* AppDetailViewController.xib */,
+			);
+			name = "Application Detiail Views";
 			sourceTree = "<group>";
 		};
 		CFD3399CDC35478F70E7EC7A /* Pods */ = {
@@ -289,6 +313,7 @@
 		D67FFF9A1F6FD20A0063449C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A3D751FB207CB3B70014C46C /* Application Detiail Views */,
 				D64C4E881F72A40100C90F51 /* Custom Views */,
 				D61E929A1F7143D600B60518 /* Contact View Controllers */,
 				D61E92991F7143CB00B60518 /* About View Controllers */,
@@ -417,6 +442,7 @@
 				D643957D1F7A5A200085F3F3 /* AboutView.xib in Resources */,
 				D64C4E901F753CBA00C90F51 /* ContactTableViewCell.xib in Resources */,
 				3464475677FFE33378AD3B08 /* LaunchScreen.storyboard in Resources */,
+				A3D751FE207CB46D0014C46C /* AppDetailViewController.xib in Resources */,
 				3464448E8F8AC41D78838095 /* Main.storyboard in Resources */,
 				D64395791F7A52BA0085F3F3 /* AboutTableViewCell.xib in Resources */,
 				D64C4E8C1F72A42000C90F51 /* ShowcaseAppTableViewCell.xib in Resources */,
@@ -507,6 +533,7 @@
 				D64395781F7A52BA0085F3F3 /* AboutTableViewCell.swift in Sources */,
 				D61E92941F7129D200B60518 /* FirebaseAPI.swift in Sources */,
 				D67FFFA01F6FD2B00063449C /* LoginViewController.swift in Sources */,
+				A3D751FA207CB38E0014C46C /* UIViewControllerExtension.swift in Sources */,
 				D643957B1F7A5A160085F3F3 /* AboutView.swift in Sources */,
 				D67FFF9D1F6FD2710063449C /* DVTShowcaseViewController.swift in Sources */,
 				D64395701F755D410085F3F3 /* CMMapLauncher.m in Sources */,
@@ -515,6 +542,7 @@
 				D6A629F31F6FF7590070994C /* DVTShowcaseColor.swift in Sources */,
 				D64C4E8B1F72A42000C90F51 /* ShowcaseAppTableViewCell.swift in Sources */,
 				D61E92A01F71443100B60518 /* ContactViewController.swift in Sources */,
+				A3D751FF207CB46D0014C46C /* AppDetailViewController.swift in Sources */,
 				D61E929C1F71441400B60518 /* HomeViewController.swift in Sources */,
 				D61E929E1F71442300B60518 /* AboutViewController.swift in Sources */,
 				D61E92961F71415300B60518 /* DVTShowcaseTabController.swift in Sources */,
